@@ -1,0 +1,92 @@
+.kyc {
+  padding: 2rem;
+  .heading {
+    margin-top: 0;
+    color: #fcb205;
+    .back {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 30% calc(70% - 1rem);
+    gap: 1rem;
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #1b1e20;
+      padding: 2.4rem;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: 0 0;
+      }
+      .name {
+        color: #fcb205;
+        margin-bottom: 0;
+      }
+    }
+
+    .right {
+      background-color: #fcb20533;
+      padding: 1rem 2.5rem;
+      h2 {
+        color: #fcb205;
+      }
+    }
+  }
+  .actions {
+    display: grid;
+    grid-template-columns: 30% calc(70% - 1rem);
+    gap: 1rem;
+    .open {
+      background-color: transparent;
+      color: #fcb205;
+      border: 1px solid #fcb205;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 1.4rem;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .dontOpen {
+      background-color: transparent;
+      color: #fcb205;
+      border: 1px solid #fcb205;
+      padding: 1rem;
+      cursor: no-drop;
+      font-size: 1.4rem;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    .right {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .acceptedButton {
+        background-color: #fcb205;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        padding: 1rem 4rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+      .rejectedButton {
+        background-color: #e23121;
+        color: #fff;
+        border-radius: 5px;
+        border: none;
+        padding: 1rem 4rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

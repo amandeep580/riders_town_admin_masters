@@ -1,0 +1,55 @@
+.login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #322401;
+  padding: 1.5rem 4.4rem;
+  min-width: 497px;
+  .head {
+    text-align: center;
+    .heading {
+      color: #fff;
+      font-size: 1.8rem;
+      margin-top: 0;
+      span {
+        color: #fcb205;
+      }
+    }
+  }
+  .inputField {
+    border: 1px solid #fcb205;
+    padding: 0.7rem;
+    position: relative;
+    margin-top: 2.5rem;
+    .labels {
+      position: absolute;
+      font-size: 1rem;
+      top: -20%;
+      display: block;
+      color: #fcb205;
+      background-color: #322401;
+      padding: 0 0.3rem;
+    }
+    .input {
+      color: #fcb205;
+      font-size: 1rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: transparent;
+      &:active {
+        background-color: transparent;
+      }
+    }
+  }
+
+  .forgot {
+    display: block;
+    margin-top: 1rem;
+    text-decoration: underline;
+    color: #fcb205;
+    cursor: pointer;
+    text-align: right;
+  }
+}

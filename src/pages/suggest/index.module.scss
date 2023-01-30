@@ -1,0 +1,90 @@
+.suggest {
+  padding: 2rem;
+  .heading {
+    margin-top: 0;
+    color: #fcb205;
+    .back {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
+  h1 {
+    color: #fcb205;
+    text-transform: capitalize;
+  }
+  .grid {
+    padding: 1rem;
+    background-color: #1b1e20;
+    display: grid;
+    grid-template-columns: 15% calc(85% - 2rem);
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    img {
+      width: 150px;
+      border-radius: 100%;
+    }
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      color: #fcb205;
+      text-transform: uppercase;
+    }
+    .info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1rem;
+    }
+  }
+  .container {
+    min-width: 80%;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #1b1e20;
+    .images {
+      padding: 1em;
+      .image {
+        height: 200px;
+        width: 300px;
+        object-fit: cover;
+        object-position: 0 0;
+        cursor: pointer;
+      }
+      .soloImage {
+        height: 200px;
+        margin-right: 1rem;
+      }
+      .flex {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 1rem;
+      .name {
+        color: #fcb205;
+      }
+    }
+  }
+}
+.select {
+  width: 50%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #ccc;
+  padding-right: 2rem;
+  outline: none;
+}
+.updateButton {
+  border-color: #fcb205;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fcb205;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 5%;
+}

@@ -1,0 +1,84 @@
+.payment {
+  padding: 2%;
+
+  .head {
+    margin: 0;
+    text-transform: uppercase;
+    color: #fcb205;
+  }
+  table {
+    border-collapse: collapse;
+    border-style: hidden;
+    background-color: #1b1e20;
+    border-radius: 4px;
+    width: 100%;
+  }
+  table td {
+    border: 1px solid #ccc;
+  }
+
+  table th {
+    border: 1px solid #ccc;
+    border-bottom: none;
+  }
+  th,
+  td {
+    text-align: center;
+    padding: 1rem;
+  }
+  .table {
+    margin: 1rem auto;
+    width: 96%;
+
+    .tableHeading {
+      .tableHead {
+        color: #fcb205;
+        padding: 1rem;
+      }
+    }
+    .tableBody {
+      .open {
+        cursor: pointer;
+        background-color: #fcb2054d;
+        border: none;
+        width: 2%;
+      }
+      .row {
+        .name {
+          img {
+            margin-right: 2.5rem;
+            border-radius: 50%;
+          }
+          span {
+            display: inline-block;
+            transform: translate(0, -50%);
+          }
+        }
+        .buttons {
+          display: flex;
+          border: none;
+          border-right: 1px solid #ccc;
+          border-top: 1px solid #ccc;
+          justify-content: space-evenly;
+          .reject {
+            cursor: pointer;
+            background-color: #e23121;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+          }
+          .accept {
+            cursor: pointer;
+            background-color: #7e5902;
+            border: none;
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

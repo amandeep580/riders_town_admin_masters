@@ -1,0 +1,72 @@
+.suggest {
+  padding: 2rem;
+  .heading {
+    margin-top: 0;
+    color: #fcb205;
+    .back {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+  }
+  .container {
+    // min-height: 85vh;
+    min-width: 80%;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #1b1e20;
+    .images {
+      padding: 1em;
+      .image {
+        height: 250px;
+        width: 300px;
+        margin-right: 1rem;
+        object-fit: cover;
+        object-position: 0 0;
+        cursor: pointer;
+      }
+      .soloImage {
+        height: 200px;
+        margin-right: 1rem;
+      }
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      gap: 1rem;
+      .name {
+        color: #fcb205;
+      }
+    }
+  }
+  .buttons {
+    display: flex;
+    border: none;
+    margin-top: 1rem;
+    justify-content: space-evenly;
+
+    .reject {
+      cursor: pointer;
+      background-color: #e23121;
+      border: none;
+      color: #fff;
+      padding: 1rem 2.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+    }
+    .accept {
+      cursor: pointer;
+      background-color: #fcb205;
+      border: none;
+      color: #fff;
+      padding: 1rem 2.5rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      margin-right: 1rem;
+    }
+  }
+}

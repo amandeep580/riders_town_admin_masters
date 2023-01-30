@@ -1,0 +1,121 @@
+.dashboard {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  .header {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    // min-height: 190px;
+    .form {
+      .inputContainer {
+        padding: 1rem;
+        border-radius: 10px;
+        background-color: #1b1e20;
+        margin: 0.7rem 1.5rem;
+        width: 90%;
+        .input {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          width: 85%;
+          color: #e0e0e0cc;
+          font-size: 0.7rem;
+        }
+        .submit {
+          border: none;
+          outline: none;
+          background-color: transparent;
+          color: #fff;
+        }
+      }
+    }
+    .profile {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 90%;
+      background-color: #1b1e20;
+      margin: 0.7rem;
+      border-radius: 10px;
+      padding: 1rem 0.2rem;
+      .dummy {
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .name {
+        color: #fcb205;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+      .notification {
+        cursor: pointer;
+        padding: 0.6rem;
+        background-color: #fcb20533;
+        border-radius: 10px;
+        position: relative;
+      }
+    }
+  }
+  .welcome {
+    padding: 0 2rem;
+    .heading {
+      font-weight: 700;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      font-style: italic;
+      span {
+        color: #fcb205;
+        text-transform: uppercase;
+      }
+    }
+    .activities {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #ffffffcc;
+      letter-spacing: 1.5px;
+      margin: 0;
+    }
+  }
+  .overview {
+    padding: 0 2rem;
+    .heading {
+      color: #fcb205;
+      text-transform: uppercase;
+    }
+    .dashboardContent {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      gap: 1rem;
+      .overviewCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.4rem;
+      }
+    }
+  }
+  .upcoming {
+    display: grid;
+    grid-template-rows: 35vh 45vh;
+    gap: 1rem;
+    .events {
+      background-color: #1b1e20;
+      border-radius: 4px;
+      overflow: scroll;
+      .head {
+        display: flex;
+        padding: 0.5rem;
+        color: #fcb205;
+        font-weight: 700;
+        font-size: 1.3rem;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2rem;
+        gap: 0.3rem;
+      }
+    }
+  }
+}

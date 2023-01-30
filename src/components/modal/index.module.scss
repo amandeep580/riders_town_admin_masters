@@ -1,0 +1,40 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #322401;
+  min-width: 869px;
+  color: #fcb205;
+  .header {
+    background-color: #1b1e20;
+    padding: 2rem 3rem;
+    .heading {
+      margin: 0;
+    }
+  }
+  .modalBody {
+    padding: 2rem 3rem;
+    .error {
+      color: #ee1515;
+      text-transform: uppercase;
+    }
+    .content {
+      color: #ffffffcc;
+      line-height: 2rem;
+      font-size: 1rem;
+    }
+    .input {
+      border: 1px solid #fcb205;
+      outline: none;
+      width: 90%;
+      background-color: transparent;
+      color: #fcb205;
+      padding: 1rem;
+      font-size: 1rem;
+    }
+    .button {
+      width: 25%;
+    }
+  }
+}

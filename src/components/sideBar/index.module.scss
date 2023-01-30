@@ -1,0 +1,48 @@
+%nav {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 10px;
+  color: #fff;
+  .icon {
+    margin-right: 1rem;
+  }
+}
+.sidebar {
+  height: 100vh;
+  width: 315px;
+  position: fixed;
+  left: 0;
+  background-color: #1b1e20;
+  padding-top: 1rem;
+  overflow: scroll;
+  .head {
+    text-align: center;
+    .heading {
+      color: #fff;
+      font-weight: 800;
+      font-size: 2rem;
+      cursor: pointer;
+      margin-top: 0;
+      span {
+        color: #fcb205;
+      }
+    }
+  }
+  .navigationList {
+    .active {
+      @extend %nav;
+      background-color: #fcb205;
+    }
+    .item {
+      @extend %nav;
+    }
+  }
+}
